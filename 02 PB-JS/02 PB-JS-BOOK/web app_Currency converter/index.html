@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Cyrrency Converter</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+</head>
+<body>
+    <form class="content-form">
+        <h2 class="title">Cyrrency Converter</h2>
+        <section class="items">
+            <label for="BGN" class="currency">
+                <span class="item-currency">BGN: </span>
+                <input class="currency-value" type="text" id="BGN" />
+                <input type="checkbox" id="toBGN" onclick="converter()" />
+            </label>
+            <label for="USD" class="currency">
+                <span class="item-currency">USD: </span>
+                <input class="currency-value" type="text" id="USD" />
+                <input type="checkbox" id="toUSD" onclick="converter()" />
+            </label>
+            <label for="EUR" class="currency">
+                <span class="item-currency">EUR: </span>
+                <input class="currency-value" type="text" id="EUR" />
+                <input type="checkbox" id="toEUR" onclick="converter()" />
+            </label>
+            <label for="GBP" class="currency">
+                <span class="item-currency">GBP: </span>
+                <input class="currency-value" type="text" id="GBP" />
+                <input type="checkbox" id="toGBP" onclick="converter()"/>
+            </label>
+            <label for="RESULT" class="currency">
+                <span class="item-currency">RESULT: </span>
+                <input class="currency-value" type="text" id="result" readonly />
+            </label>
+        </section>
+    </form>
+    <script src="converter.js" type="text/javascript"></script>
+</body>
+</html>
